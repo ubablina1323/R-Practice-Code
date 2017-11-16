@@ -1,3 +1,4 @@
+#Sample dataframe creation
 Died.At <- c(22,40,72,41)
 Writer.At <- c(16, 18, 36, 36)
 First.Name <- c("John", "Edgar", "Walt", "Jane")
