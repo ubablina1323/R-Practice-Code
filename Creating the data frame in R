@@ -55,3 +55,4 @@ test<-matrix(c(1:9),3,3)
 test
 apply(test,2,mean)
 apply(test,1,mean)
+young_writers_df <- subset(Dataframeexample1, Died.At <= 40)# subsetting the dataframe.Using & we can have more filter conditions.
