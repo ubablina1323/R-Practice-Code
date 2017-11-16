@@ -58,3 +58,17 @@ apply(test,1,mean)
 young_writers_df <- subset(Dataframeexample1, Died.At <= 40)# subsetting the dataframe.Using & we can have more filter conditions.
 forty_writers_df <- Dataframeexample1[grep("4", Dataframeexample1$Died.At),]#using grep to filter records whose age is having 4
 forty_writers_df
+
+Dataframeexample1[nrow(Dataframeexample1) + 1,] = list(Died.At=4, Writer.At=2, First.Name="Cobra",Second.Name="Diamond",Sex="MALE",Date.Of.Death="2016-01-01")#adding new record to the dataframe
+# Before that we need to make the changes to the data frame as mentioned below to resolve the error
+Dataframeexample1<-data.frame(Died.At,Writer.At,I(First.Name),I(Second.Name),Sex,as.Date(Date.Of.Death))
+#Here the error is that in the First.Name Second.Name we are generating the <NA>  because of the default factor level assignment by the R while creating the data frame.
+Warning message: invalid factor level, NA generated
+Warning message: invalid factor level, NA generated
+> Dataframeexample1
+  Died.At Writer.At First.Name Second.Name    Sex as.Date.Date.Of.Death.
+1      22        16       John         Doe   MALE             2015-05-10
+2      40        18      Edgar         Poe   MALE             1849-10-07
+3      72        36       Walt     Whitman   MALE             1892-03-26
+4      41        36       Jane      Austen FEMALE             1817-07-18
+5       4         2       <NA>        <NA>   MALE             2016-01-01
