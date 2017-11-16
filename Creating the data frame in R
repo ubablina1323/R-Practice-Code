@@ -56,3 +56,5 @@ test
 apply(test,2,mean)
 apply(test,1,mean)
 young_writers_df <- subset(Dataframeexample1, Died.At <= 40)# subsetting the dataframe.Using & we can have more filter conditions.
+forty_writers_df <- Dataframeexample1[grep("4", Dataframeexample1$Died.At),]#using grep to filter records whose age is having 4
+forty_writers_df
