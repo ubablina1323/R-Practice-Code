@@ -28,7 +28,7 @@ str(Dataframeexample1)
 # Here in the above structure if you observe carefully first 2 are numbers 3,4,5,6 are factors. In reality do we really 
 #need them as factors ? No. Only Sex will be the factor as this was the categorical variable, other 2 are not required. So inorder to 
 #change them to the normal object. For this we have to mention I(variable) while creating in the data frame.
-#for example Dataframeexample1<-data.frame(Died.At,Writer.At,I(First.Name),Second.Name,Sex,Date.Of.Death) 
+#for example Dataframeexample1<-data.frame(Died.At,Writer.At,I(First.Name),Second.Name,Sex,Date.Of.Death) for date it is as.Date(Date.Of.Death)
 'data.frame':	4 obs. of  6 variables:
  $ Died.At      : num  22 40 72 41
  $ Writer.At    : num  16 18 36 36
