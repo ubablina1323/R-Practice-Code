@@ -37,3 +37,10 @@ str(Dataframeexample1)
  $ Second.Name  : Factor w/ 4 levels "Austen","Doe",..: 2 3 4 1
  $ Sex          : Factor w/ 2 levels "FEMALE","MALE": 2 2 2 1
  $ Date.Of.Death: Factor w/ 4 levels "1817-07-18","1849-10-07",..: 4 2 3 1
+ 
+dim(Dataframeexample1)# to know matrix dimension
+dim(Dataframeexample1)[1]# to pull row length. Here 1 specifies row
+dim(Dataframeexample1)[2]# to pull col length. Here 2 specifies col
+nrow(Dataframeexample1)# to pull row length. 
+ncol(Dataframeexample1)# to pull col length. 
+length(Dataframeexample1)# to pull col length.
