@@ -43,4 +43,15 @@ dim(Dataframeexample1)[1]# to pull row length. Here 1 specifies row
 dim(Dataframeexample1)[2]# to pull col length. Here 2 specifies col
 nrow(Dataframeexample1)# to pull row length. 
 ncol(Dataframeexample1)# to pull col length. 
-length(Dataframeexample1)# to pull col length.
+length(Dataframeexample1)# to pull col length
+which(Dataframeexample1$Second.Name=="Doe", arr.ind=TRUE)
+search()
+Dataframeexample1
+Diedage<-Dataframeexample1$Died.At
+Diedage
+mean(Dataframeexample1$Died.At)
+apply(Dataframeexample1[1,drop=FALSE] ,2,mean)
+test<-matrix(c(1:9),3,3)
+test
+apply(test,2,mean)
+apply(test,1,mean)
