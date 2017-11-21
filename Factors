@@ -1,0 +1,69 @@
+x <- factor(c("single","married","married","single"))
+str(x)
+x[1]
+x[c(1,4)]
+x[-2]
+#x[3]<-"widowed"
+x
+levels(x)<-c(levels(x),"widowed")
+x
+x[3]<-"widowed"
+x
+levels(x)<-c(levels(x),"divorced")
+x
+x[4]<-"divorced"
+x
+str(x)
+factor(x)
+levels(x)
+nlevels(x)
+or<-factor(x,c("single", "married","divorced","widowed"),ordered=TRUE)
+or
+
+result
+
+ x <- factor(c("single","married","married","single"))
+> str(x)
+ Factor w/ 2 levels "married","single": 2 1 1 2
+> x[1]
+[1] single
+Levels: married single
+> x[c(1,4)]
+[1] single single
+Levels: married single
+> x[-2]
+[1] single  married single 
+Levels: married single
+> #x[3]<-"widowed"
+> x
+[1] single  married married single 
+Levels: married single
+> levels(x)<-c(levels(x),"widowed")
+> x
+[1] single  married married single 
+Levels: married single widowed
+> x[3]<-"widowed"
+> x
+[1] single  married widowed single 
+Levels: married single widowed
+> levels(x)<-c(levels(x),"divorced")
+> x
+[1] single  married widowed single 
+Levels: married single widowed divorced
+> x[4]<-"divorced"
+> x
+[1] single   married  widowed  divorced
+Levels: married single widowed divorced
+> str(x)
+ Factor w/ 4 levels "married","single",..: 2 1 3 4
+> factor(x)
+[1] single   married  widowed  divorced
+Levels: married single widowed divorced
+> levels(x)
+[1] "married"  "single"   "widowed"  "divorced"
+> nlevels(x)
+[1] 4
+> or<-factor(x,c("single", "married","divorced","widowed"),ordered=TRUE)
+> or
+[1] single   married  widowed  divorced
+Levels: single < married < divorced < widowed
